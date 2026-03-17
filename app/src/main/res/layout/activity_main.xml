@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logging_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:padding="0dp">
+
+
+    <TextView
+        android:id="@+id/splash_logo"
+        android:layout_width="375dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/rounded_blue_bg"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/hum777k"/>
+
+    <FrameLayout
+        android:id="@+id/google_icon_container"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_blue_bg">
+
+        <FrameLayout
+            android:id="@+id/white_square"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white_blue_border"
+            android:backgroundTint="@android:color/white"
+            android:clipToOutline="true"
+            android:outlineProvider="background" />
+
+            <ImageView
+                android:id="@+id/google_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/google"
+                android:contentDescription="@string/google_icon_desc" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/google_sign_in"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/google_icon_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/rounded_blue_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/google_login_button"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:src="@drawable/continuewithgoogle"
+            android:contentDescription="@string/google_icon_desc"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/version_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/version"
+    android:textSize="18sp"
+    android:textColor="#FFFFFF"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

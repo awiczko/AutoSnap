@@ -1,0 +1,7 @@
+<resources>
+    <color name="white">#FFFFFF</color> <!-- lub np. #FFFFFFFF -->
+    <color name="blue">#0075FA</color>
+    <color name="black">#000000</color>
+    <color name="grey">#1F1C1C</color>
+    <color name="grey2">#2C2C2C</color>
+</resources>

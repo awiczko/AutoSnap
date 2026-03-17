@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AutoSnap!</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="version">version</string>
+    <string name="google_icon_desc">google.png</string>
+    <string name="default_web_client_id">#######################</string>
+</resources>
